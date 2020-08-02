@@ -44,7 +44,95 @@ header {
     }
     
   }
+   .twosides {
+    display: flex;
+    justify-content: space-between;
+    // margin-top: 25px;
+    .information {
+      margin-top: 100px;
+      max-width: 330px;
   
+      h2 {
+        color: $dim;
+        font-size: 200%;
+        font-weight: bold;
+        margin: 20px 0;;
+        line-height: 95%;
+      }
+  
+      p{
+        color: $dark-gray;
+        max-width: 20em;
+        font-family: $secondary-font;
+        font-size: 110%;
+        span {
+          color: $orange;
+        }
+      }
+      .info {
+        margin-bottom: 1.8em;
+      }
+      a {
+        font-size: 120%;
+        font-weight: bold;
+        color: $orange;
+        padding-bottom: 2px;
+        display: inline;
+        
+
+        &:hover {
+          border: 3px solid $orange;
+          padding: 4px 15px;
+          background: $orange;
+          transition: .2s;
+          color: $dim;
+        }
+      }
+    }
+    .name {
+      text-align: right;
+      position: relative;
+      h1 {
+        font-size: 4.5em;
+        line-height: 75%;
+        font-weight: 100;
+        color: $dark;
+        
+        
+        
+        &:first-of-type {
+          margin-right: -5px;
+          margin-top: 40px;
+          font-size: 5.2em;
+          
+        }
+      }
+  
+      span {
+        color: $orange;
+      }
+      p {
+        border-bottom: 6px solid $orange;
+        margin-top: 20px;
+        width: 333px;
+        position: absolute;
+        right: 0;
+      }
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+          margin-left: 10px;
+          font-size: 140%;
+          color: $dark;
+          margin-top: 100px;
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
   
 }
 
