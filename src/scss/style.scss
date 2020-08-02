@@ -1,0 +1,50 @@
+@import 'utilities';
+@import 'components';
+
+header {
+  background-color: #fff;
+  
+  .container {
+    background-image: url(/src/img/20200706_004610.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 27px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 330px;
+  
+      li {
+      font-size: 145%;
+      font-weight: bold;
+      line-height: 80%;
+      padding: 0 4px;
+      color: $dark-gray;
+      
+        &:hover { 
+          color: black;
+        }
+      
+      }
+      a .high-light {
+        border-left: 3px solid $orange;
+        color: black;
+      }
+    }
+    .logo img {
+      width: 50;
+      height: 50;
+    }
+    
+  }
+  
+  
+}
+

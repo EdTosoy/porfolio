@@ -1,0 +1,58 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  // border: .2px solid yellowgreen;
+  line-height: 1.3;
+  list-style: none;
+  text-decoration: none;
+  font-family: $primary-font;
+  transition: .2s;
+}
+
+a {
+  color: inherit;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.full-container {
+  max-width: 1350;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+.heading {
+  color: white;
+  font-size: 270%;
+  text-align: center;
+  font-weight: 90;;
+  position: relative;
+  padding-bottom: 20px;
+  &:after {
+    content: '';
+    border-bottom: 2px solid $orange;
+    width: 100px;
+    display: block;
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+  }
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $orange;
+  border-radius: 4px;
+}
