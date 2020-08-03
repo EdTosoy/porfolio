@@ -136,3 +136,54 @@ header {
   
 }
 
+.services {
+  background-color: $dim;
+  padding-bottom: 2em;
+
+  .about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0px;
+    margin-bottom: 100px;
+    
+    .about {
+      max-width: 20em;
+      p {
+        font-size: 110%;
+        color: $dark-gray;
+        font-family: $secondary-font;
+        &:last-of-type {
+          color: white;
+          font-size: 160%;
+          font-family: $primary-font;
+          margin-top: .3em;
+          line-height: 110%;
+          font-weight: lighter;
+        }
+      }
+    span {
+        color: $orange
+      }
+    }
+    a {
+      color: $dark-gray;
+      font-size: 120%;
+      margin-top: 1.3em;
+      &:hover {
+        border-bottom: 2px solid $orange;
+        
+      }
+      display: inline-block;
+  
+    }
+    .about-text {
+      max-width: 50%;
+      p {
+        font-size: 130%;
+        color: $dark-gray;
+        font-family: $secondary-font;
+        text-indent: 50px;
+      }
+  
+    }
+  }
