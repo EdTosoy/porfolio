@@ -187,3 +187,49 @@ header {
   
     }
   }
+  
+  .services-wrapper {
+    display:flex;
+    max-width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 3em;;;
+  
+    .cards {
+      background-color: #f8f8f8;
+      width: 24.3%;
+      text-align: center;
+      border-radius: 0px;
+      padding: 15px 0 0 0;
+  
+      .icon-big{
+        font-size: 600%;
+        color: $orange;
+      } 
+      p {
+        color:  $dim;
+        font-size: 160%;
+        font-weight: 100;
+        margin-bottom: 10px;
+      }
+      ul {
+        background-color: white;
+        padding-bottom: 2em;
+        padding-top: 10px;
+      }
+      li {
+        text-align: left;
+        padding: 5px 20px;
+        color: $dark-gray;
+        font-size: 120%;
+  
+        i {
+          color: $orange;
+          margin-right: 10px;
+          font-size: 120%;
+        }
+  
+      }
+    }
+  }
+}
