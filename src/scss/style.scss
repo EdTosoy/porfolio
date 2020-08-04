@@ -263,3 +263,36 @@ header {
     }
   }
 }
+.contact {
+  background-color: $dim;
+
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4em;
+    h4 {
+      color: white;
+      font-size: 150%;
+      font-weight: 100;
+      line-height: 100%;
+    }
+    .something-else {
+      width: 50%;
+      p {
+        max-width: 340px;
+        color: $dark-gray;
+        margin-top: 15px;
+        font-size: 120%;
+      }
+      a {
+        color: $dark-gray;
+        margin-top: 40px;
+        display: inline-block;
+        font-size: 120%;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+}
