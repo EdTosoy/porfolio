@@ -295,4 +295,121 @@ header {
         }
       }
     }
+  
+    
+  }
+  form {
+    width: 50%;
+    position: relative;
+    
+    input{
+      display: block;
+      width: 100%;
+      color: $orange;
+      font-size: 120%;
+      height: 35px;
+      border-radius: 3px;
+      padding: 3px 10px;
+      background-color: $dim;
+      border: none;
+      
+      &:focus {
+        border: 3px solid $orange;
+        outline: none;
+        transition: .2s;
+      }
+    }
+    textarea {
+      display: block;
+      width: 100%;
+      font-size: 120%;
+      color: $orange;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom: 3px solid $orange;
+      border-radius: 3px;
+      padding: 3px 10px;
+      margin-bottom: 3em;
+      background-color: $dim;
+      &:focus {
+        border: 3px solid $orange;
+        outline: none;
+        transition: .2s;
+      }
+    }
+    label , p{
+      color: $dark-gray;
+      font-size: 120%;
+      margin: 10px auto 5px auto;
+      display: block;
+      
+      
+    }
+    .date-and-time {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px auto;
+      label {
+        width: 50%;
+      }
+      input {
+        width: auto;
+      }
+    }
+  
+
+    button[type='submit'] {
+      width: 50px;
+      height: 50px;
+      background-color: $dark;
+      border-radius: 50%;
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      cursor: pointer;
+      color: $orange;
+      font-size: 150%;
+      border: none;
+      transform: scale(1,1);
+      &:hover {
+        background-color: $orange;
+        color: $dim;
+        transform: scale(1.1,1.1);
+        font-size: 200%;
+        top: -4px
+        
+      }
+    }
+  }
+  
+  .thank-you {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+    img {
+      width: 50px;
+      
+    }
+    p {
+      color: $dark-gray;
+      font-size: 120%;
+      margin-left: 10px;;;
+    }
+  }  
+  ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+    li {
+      margin-left: 10px;
+      font-size: 140%;
+      color: $dark-gray;
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
 }
